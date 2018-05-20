@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-
+RUN apt-get update
 RUN apt-get install python-software-properties -y
 RUN apt-get install zsh git vim curl wget locales -y
 
