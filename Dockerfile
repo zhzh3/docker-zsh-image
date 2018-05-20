@@ -4,7 +4,8 @@ RUN apt-get update
 RUN apt-get install python-software-properties -y
 RUN apt-get install zsh git vim curl wget locales -y
 
-RUN add-apt-repository ppa:nginx/stable
+RUN nginx=stable
+RUN add-apt-repository ppa:nginx/$nginx
 RUN apt-get update
 RUN apt-get install nginx -y
 
